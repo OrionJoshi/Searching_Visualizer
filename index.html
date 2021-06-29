@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Searching Visualizer</title>
+    <link rel="stylesheet" href="./Css/style.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div class="outer-wrapper">
+        <!-- nav bar section -->
+        <nav class="navbar container shadow">
+          <!-- navbar left section -->
+          <div class="nav-left-section">
+            <h2><a href="">Searching</a></h2>
+          </div>
+          <!-- navbar middle section -->
+          <div class="nav-middle-section">
+            <div class="linear-wrapper search-btn">
+              <button class="linear-btn btn" id="linear-search">
+                Linear Search
+              </button>
+            </div>
+            <div class="binary-wrapper search-btn">
+              <button class="binary-btn btn" id="binary-search">
+                Binary Search
+              </button>
+            </div>
+          </div>
+          <!-- navbar right section -->
+          <div class="nav-right-section">
+            <h2><a href="">Visualizer</a></h2>
+          </div>
+        </nav>
+
+        <!-- main body section  -->
+        <div class="main">
+          <div class="main-wrapper shadow">
+            <!-- searching visual section -->
+            <div class="search-window">
+              <div class="box-container">
+                <div class="box" id="box0">0</div>
+                <div class="box" id="box1">1</div>
+                <div class="box" id="box2">2</div>
+                <div class="box" id="box3">3</div>
+                <div class="box" id="box4">4</div>
+                <div class="box" id="box5">5</div>
+                <div class="box" id="box6">6</div>
+                <div class="box" id="box7">7</div>
+                <div class="box" id="box8">8</div>
+                <div class="box" id="box9">9</div>
+              </div>
+            </div>
+            <!-- search option section -->
+            <div class="search-options">
+              <div class="search-options-wrapper">
+                <!-- for generating new array -->
+                <div class="generate-array">
+                  <button class="new-array btn shadow" id="generate-array">
+                    New Array
+                  </button>
+                </div>
+                <!-- for element to be search -->
+                <div class="search-element">
+                  <input
+                    type="text"
+                    placeholder="Enter element to search"
+                    id="valueForSearch"
+                    required="required"
+                  />
+                </div>
+                <!-- for search to start -->
+                <div class="search-wrapper">
+                  <button class="search btn shadow" id="search">Search</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- js file links -->
+  </body>
+</html>
