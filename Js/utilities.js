@@ -30,3 +30,11 @@ function insertRandomArray() {
     }
   }
 }
+
+// disable the buttoms
+function disable() {
+  binarySearchBtn.setAttribute("disabled", true);
+  linearSearchBtn.setAttribute("disabled", true);
+  searchBtn.setAttribute("disabled", true);
+  generateArrayBtn.setAttribute("disabled", true);
+}
