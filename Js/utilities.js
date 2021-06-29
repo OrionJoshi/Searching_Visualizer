@@ -8,3 +8,25 @@ function generateArray() {
   }
   return resultArray;
 }
+
+// insert random generated value
+function insertRandomArray() {
+  // making global variable
+  randomArray = generateArray();
+  randomSortedArray = [...randomArray];
+
+  // sort random array for binary search
+  randomSortedArray.sort((a, b) => a - b);
+
+  if (searchType === "linear") {
+    for (let i = 0; i < 10; i++) {
+      let box = `box${i}`;
+      document.getElementById(box).innerHTML = randomArray[i];
+    }
+  } else {
+    for (let i = 0; i < 10; i++) {
+      let box = `box${i}`;
+      document.getElementById(box).innerHTML = randomSortedArray[i];
+    }
+  }
+}
