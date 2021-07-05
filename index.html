@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Searching Visualizer</title>
+    <!-- fontaweomse cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./Css/style.css" />
   </head>
   <body>
@@ -41,17 +49,86 @@
             <!-- searching visual section -->
             <div class="search-window">
               <div class="box-container">
-                <div class="box" id="box0">0</div>
-                <div class="box" id="box1">1</div>
-                <div class="box" id="box2">2</div>
-                <div class="box" id="box3">3</div>
-                <div class="box" id="box4">4</div>
-                <div class="box" id="box5">5</div>
-                <div class="box" id="box6">6</div>
-                <div class="box" id="box7">7</div>
-                <div class="box" id="box8">8</div>
-                <div class="box" id="box9">9</div>
-              </div>
+                <div class="box" id="box-wrapper-0">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box0"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
+                <div class="box" id="box-wrapper-1">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box1"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
+                <div class="box" id="box-wrapper-2">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box2"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
+                <div class="box" id="box-wrapper-3">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box3"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
+                <div class="box" id="box-wrapper-4">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box4"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
+                <div class="box" id="box-wrapper-5">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box5"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
+                <div class="box" id="box-wrapper-6">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box6"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
+                <div class="box" id="box-wrapper-7">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box7"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
+                <div class="box" id="box-wrapper-8">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box8"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
+                <div class="box" id="box-wrapper-9">
+                  <!-- item text -->
+                  <div class="box-item-text" id="box9"></div>
+                  <!-- arrow icon -->
+                  <div class="box-item-icon">
+                    <i class="fas fa-long-arrow-alt-up"></i>
+                  </div>
+                </div>
             </div>
             <!-- search option section -->
             <div class="search-options">
@@ -69,6 +146,7 @@
                     placeholder="Enter element to search"
                     id="valueForSearch"
                     required="required"
+                    autocomplete="off"
                   />
                 </div>
                 <!-- for search to start -->

@@ -58,6 +58,7 @@ input {
 }
 
 .box {
+  position: relative;
   margin-left: 15px;
   background-color: white;
   font-size: 20px;
@@ -65,8 +66,27 @@ input {
   height: 68px;
   text-align: center;
   display: flex;
+  border-radius: 4px;
+  font-weight: 600;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.box-item-text {
+  background-color: inherit;
+}
+
+.box-item-icon {
+  position: absolute;
+  bottom: -70%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: none;
+}
+
+.box-item-icon .fas {
+  color: #fff;
 }
 
 /****************** nav bar section ************/
