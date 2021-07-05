@@ -3,6 +3,11 @@ const elementToSearch = document.getElementById("valueForSearch");
 const searchBtn = document.getElementById("search");
 const linearSearchBtn = document.getElementById("linear-search");
 const binarySearchBtn = document.getElementById("binary-search");
+const arrowIcons = document.getElementsByClassName("box-item-icon");
+
+// colors
+const successColor = "#32E0C4";
+const failureColor = "#FB3640";
 
 let randomArray = [];
 let randomSortedArray = [];
